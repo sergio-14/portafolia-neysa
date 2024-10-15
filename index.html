@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custon css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Neysa</div>
+            <ul class="nav-links">
+                <li><a href="#Inicio">Sobre mi</a></li>
+                <li><a href="#Proyecto">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+            
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+           
+        </nav>
+    </header><br><br>
+    <section class="inici" id="Inicio">
+        <div class="inici-content">
+            <h3> </h3>
+
+            <h1><span class="multiple-text"></span> Sobre mí</h1>
+            <p>¡Hola! Soy una estudiante desarrolladora web junior con habilidades en HTML, CSS, JavaScript. En mi portafolio encontrarás funcionalidades que he creado.
+                Soy apasionada, orientado a los detalles y siempre estoy aprendiendo. ¡Gracias por visitar mi
+                portafolio!</p>
+
+            <a href="" class="btn">Contactate Conmigo</a>
+        </div>
+
+        <div class="inici-img">
+            <img src="images/neysa.jpg" alt="foto perfil">
+        </div>
+
+    </section>
+    <section class="compétences" id="Proyecto">
+        <h2 class="heading">Mis <span>Habilidades en Proyectos</span></h2>
+
+        <div class="compétences-container">
+            <div class="compétences-box">
+                <img src="/images/icon/icons-html5.png" alt="html">
+                <img src="/images/icon/icons-css3.png" alt="css">
+                <img src="/images/icon/icons-javascript.png" alt="icon-javascript">
+                <h3>Front end</h3>
+                <span>HTML5 / CSS3 / JS </span>
+                <p></p>
+
+            </div>
+
+            <div class="compétences-box">
+                <img src="/images/icon/icons-word.png" alt="Word">
+                <img src="/images/icon/icons-excel.png" alt="Excel">
+                <img src="/images/icon/icon-powerpoint.png" alt="PowerPoint">
+                <h3>Pack Office</h3>
+                <span> Word / Microsoft Excel / PowerPoint / Etc.</span>
+                <p></p>
+
+            </div>
+        </div>
+    </section>
+    <h2 class="heading">Mis <span>Proyectos</span></h2>
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="carousel-item">
+                <img src="images/portafolio1.jpg" alt="Proyecto 1">
+                <div class="project-description">Seminarios</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio2.jpg" alt="Proyecto 2">
+                <div class="project-description">APrender Lenguajes</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio3.jpg" alt="Proyecto 3">
+                <div class="project-description">Entornos Virtuales</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio4.jpg" alt="Proyecto 4">
+                <div class="project-description">Uso de Frameworks</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio5.jpg" alt="Proyecto 5">
+                <div class="project-description">Base de Datos Aprendidas</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio6.jpg" alt="Proyecto 6">
+                <div class="project-description">Desarrollo continuo</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio1.jpg" alt="Proyecto 1">
+                <div class="project-description">Seminarios</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio2.jpg" alt="Proyecto 2">
+                <div class="project-description">APrender Lenguajes</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio3.jpg" alt="Proyecto 3">
+                <div class="project-description">Entornos Virtuales</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio4.jpg" alt="Proyecto 4">
+                <div class="project-description">Uso de Frameworks</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio5.jpg" alt="Proyecto 5">
+                <div class="project-description">Base de Datos Aprendidas</div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/portafolio6.jpg" alt="Proyecto 6">
+                <div class="project-description">Desarrollo continuo</div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div><br><br>
+    <section class="contact" id="Contacto">
+        <h2 class="heading">Contactate <span>Conmigo</span></h2>
+
+        <form id="formulario" action="enviar.php" method="POST" name="enviar" enctype="multipart/form-data">
+            <div class="input-box">
+                <input id="nombre" name="nombre" type="text" placeholder="ingresa el nombre" required>
+                <input id="email" name="email" type="email" placeholder="ingrese correo" required>
+            </div>
+            <div class="input-box">
+                <input id="telefono" name="telefono" type="number" placeholder="Numéro de Celular" minlength="7"
+                    maxlength="10">
+                <input id="asunto" name="asunto" type="text" placeholder="Objetivo del mensaje">
+            </div>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Descripción" required></textarea>
+            <input class="btn" type="submit" id="btn" name="btn" value="Enviar Mensaje">
+        </form>
+
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; Neysa Portafolio.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#Inicio"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- type js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
